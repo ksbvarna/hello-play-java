@@ -9,4 +9,8 @@ public class Application extends Controller {
         return ok(views.html.index.render("Hello Play Framework"));
     }
     
+    
+    public static Result hello(String input) {
+    	return ok(views.html.index.render("Hello " + input + "!"));
+    }
 }
